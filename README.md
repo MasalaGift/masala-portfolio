@@ -1,73 +1,243 @@
-# React + TypeScript + Vite
+# 🌐 Masala Gift Ratshili – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio.
 
-Currently, two official plugins are available:
+This website is more than a collection of projects—it's a showcase of my journey as a **Full-Stack Web Developer**, highlighting my technical skills, professional experience, certifications, and passion for building modern software solutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Designed with recruiters, hiring managers, and fellow developers in mind, the portfolio provides an interactive experience where visitors can explore projects through screenshots, live demonstrations, technical summaries, and case studies.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# ✨ Features
 
-## Expanding the ESLint configuration
+* 🎨 Modern and responsive user interface
+* 📱 Mobile-first design
+* 🎠 Interactive project carousel
+* 🖼️ Screenshot galleries for featured projects
+* 📖 Detailed project case studies
+* 🚀 Live demo links (where available)
+* 🏷️ Technology stack badges
+* 💼 Professional experience timeline
+* 🏆 Certifications showcase with credential previews
+* 📄 Downloadable CV
+* 📬 Contact section for networking and opportunities
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 🚀 Featured Projects
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The portfolio showcases selected projects across web, mobile, and backend development.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🌐 Web Applications
+
+* Job Application Tracker
+* Shopping List Application
+* Weather Application
+* Links Vault
+* Hotel Tango
+* React UI Challenge
+
+## ⚙️ Backend & APIs
+
+* WealthTrack Backend API
+* Collaborative Code Review Platform
+* Shopping List HTTP Server API
+
+## 📱 Mobile Applications
+
+* React Native Restaurant App
+* React Native Restaurant Application
+* React Native Note Taker
+* React Native Audio Recorder
+
+Each project includes:
+
+* Project overview
+* Problem being solved
+* Technologies used
+* Key features
+* My contributions
+* Screenshot gallery
+* Live demo (where available)
+* Repository status
+
+Some projects remain private due to internship or confidentiality agreements. In these cases, screenshots and detailed documentation are provided in place of source code.
+
+---
+
+# 🏆 Certifications
+
+The portfolio includes a dedicated certifications section showcasing my commitment to continuous learning and professional development.
+
+Certificates are presented as interactive cards containing:
+
+* Certificate title
+* Issuing organization
+* Completion date
+* Skills gained
+* Credential verification link (where available)
+* Certificate preview
+
+Categories include:
+
+## 💻 Software Development
+
+* IBM Full-Stack JavaScript Developer Professional Certificate
+* React Development
+* JavaScript
+* Git & GitHub
+* HTML & CSS
+* SQL
+
+## ☁️ Cloud & Infrastructure
+
+* IBM Cloud
+* AWS (when completed)
+
+## 🔐 Cybersecurity
+
+* ISC² Certified in Cybersecurity (CC)
+
+Additional certifications will be added as my learning journey continues.
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+* React
+* TypeScript
+* JavaScript
+* HTML5
+* CSS3
+* Redux Toolkit
+
+## Backend
+
+* Node.js
+* Express.js
+* Java
+* Spring Boot
+
+## Mobile
+
+* React Native
+
+## Databases
+
+* PostgreSQL
+* MySQL
+
+## Tools
+
+* Git
+* GitHub
+* Postman
+* Maven
+* npm
+
+## Development Practices
+
+* REST API Design
+* Responsive Web Design
+* Agile Methodologies
+* Object-Oriented Programming
+* Authentication & Authorization
+* Database Design
+
+---
+
+# 📷 Visual Project Showcase
+
+Rather than simply linking repositories, projects are presented with rich visual documentation.
+
+Visitors can:
+
+* Browse screenshots through interactive galleries
+* View responsive desktop and mobile layouts
+* Read technical summaries
+* Explore implemented features
+* Launch live demos where available
+
+This approach demonstrates both development skills and attention to user experience.
+
+---
+
+# 🎯 Purpose
+
+This portfolio demonstrates my ability to:
+
+* Build responsive web applications
+* Develop cross-platform mobile applications
+* Design and implement RESTful APIs
+* Create scalable backend systems
+* Integrate databases and authentication
+* Apply modern software engineering principles
+* Learn and adapt to new technologies
+* Deliver user-focused digital experiences
+
+---
+
+# 📂 Project Structure
+
+```text
+src/
+ ├── components/
+ ├── pages/
+ ├── layouts/
+ ├── data/
+ ├── assets/
+ ├── hooks/
+ ├── styles/
+ ├── App.jsx
+ └── main.jsx
+
+public/
+ ├── screenshots/
+ ├── certificates/
+ ├── images/
+ └── resume/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 📊 Portfolio Highlights
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* 💼 Full-Stack Development Experience
+* 🌐 Multiple Web Applications
+* 📱 React Native Mobile Applications
+* ⚙️ Backend API Development
+* 🏆 Industry Certifications
+* 📖 Real-world Project Case Studies
+* 🖼️ Screenshot Galleries
+* 🚀 Live Demonstrations
+* 📄 Downloadable Professional CV
+
+---
+
+# 📬 Contact
+
+**Masala Gift Ratshili**
+
+* 📧 Email: [giftratshili@gmail.com](mailto:giftratshili@gmail.com)
+* 💼 LinkedIn: https://www.linkedin.com/in/giftratshili
+* 💻 GitHub: https://github.com/MasalaGift
+
+I welcome opportunities to collaborate, contribute to impactful projects, and connect with professionals in software engineering and technology.
+
+---
+
+# 📜 License
+
+This portfolio is intended for professional showcase purposes.
+
+You are welcome to explore the implementation and draw inspiration from the design and architecture. Please respect project ownership and confidentiality where applicable, particularly for projects completed as part of professional or internship engagements.
+
+---
+
+## 🌱 Continuous Growth
+
+Technology evolves constantly, and so does this portfolio.
+
+As I complete new certifications, build new products, and gain additional industry experience, this site will continue to grow as a living representation of my development journey and commitment to excellence in software engineering.
