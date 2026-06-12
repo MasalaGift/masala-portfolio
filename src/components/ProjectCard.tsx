@@ -1,22 +1,58 @@
-import { Project } from "../../types/project";
+import type { Project } from "../types/project";
+import "../styles/projectCard.css";
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({
+  project,
+  onClick,
+}: {
+  project: Project;
+  onClick: () => void;
+}) {
+  // Fallback image if screenshot array is empty or first entry missing
+  const imageSrc = project.screenshots?.[0] || "/images/placeholder.png";
+
   return (
-    <div className="bg-slate-800 p-4 rounded-xl hover:scale-105 transition">
-      <img
-        src={project.screenshots[0]}
-        className="rounded"
-      />
+    <div className="project-card">
+      <img src={imageSrc} alt={project.title} />
 
-      <h3 className="mt-2 font-bold">{project.title}</h3>
-      <p className="text-sm text-gray-400">{project.type}</p>
+      <div className="project-card-content">
+        <h3>{project.title}</h3>
 
-      <div className="flex flex-wrap gap-1 mt-2">
-        {project.tech.map((t) => (
-          <span className="text-xs bg-slate-700 px-2 py-1 rounded">
-            {t}
-          </span>
-        ))}
+        {/* Role badge (if available) */}
+        {project.role && (
+          <span className="project-role-badge">{project.role}</span>
+        )}
+
+        <p className="project-type">{project.type}</p>
+
+        <p style={{ fontSize: "13px", marginTop: 5 }}>
+          {project.description}
+        </p>
+
+        {/* TECH STACK */}
+        <div className="tech-tags">
+          {project.tech.map((t) => (
+            <span key={t}>{t}</span>
+          ))}
+        </div>
+
+        {/* LINKS */}
+        <div style={{ marginTop: 10, display: "flex", gap: "10px" }}>
+          {project.demo && (
+            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn">
+              Live Demo
+            </a>
+          )}
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">
+              GitHub
+            </a>
+          )}
+        </div>
+
+        <button className="btn" style={{ marginTop: 10, width: "100%" }} onClick={onClick}>
+          View Details
+        </button>
       </div>
     </div>
   );
