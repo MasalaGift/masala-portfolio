@@ -49,7 +49,7 @@ export const certifications = [
     id: "react-cert-mlab",
     title: "React Development Certificate",
     issuer: "mLab Southern Africa",
-    date: "2026",
+    date: "Mar 2026",
     skills: ["React", "Frontend Development", "TypeScript"],
     image: "/certificates/mLab.png",
     link: "https://codetribe.mlab.co.za/verify-student/94f35d85-b25d-4364-83c4-6fd8157fb286"
