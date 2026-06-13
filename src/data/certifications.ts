@@ -5,8 +5,8 @@ export const certifications = [
     issuer: "Coursera",
     date: "Jun 2026",
     skills: ["Git", "GitHub", "Version Control"],
-    image: "/certificates/git-github.jpg",
-    link: "#"
+    image: "/certificates/git-and-github-essentials.1.png",
+    link: "https://www.credly.com/badges/20ce6780-dedc-4c4a-bee5-e39c68649271/linked_in_profile"
   },
   {
     id: "html-css-js-ibm",
@@ -14,8 +14,8 @@ export const certifications = [
     issuer: "IBM",
     date: "Jun 2026",
     skills: ["HTML5", "CSS3", "JavaScript"],
-    image: "/certificates/ibm-html-css-js.jpg",
-    link: "#",
+    image: "/certificates/JS intro.png",
+    link: "https://www.coursera.org/account/accomplishments/verify/VXTWH870E7RB",
     credentialId: "VXTWH870E7RB"
   },
   {
@@ -24,8 +24,8 @@ export const certifications = [
     issuer: "Coursera",
     date: "May 2026",
     skills: ["Software Engineering", "SDLC", "Agile"],
-    image: "/certificates/software-eng.jpg",
-    link: "#"
+    image: "/certificates/software-engineering-essentials.png",
+    link: "https://www.credly.com/badges/b70fa09b-d457-45c7-8924-16bb8354187a/linked_in_profile"
   },
   {
     id: "intro-cybersecurity-cisco",
@@ -33,18 +33,8 @@ export const certifications = [
     issuer: "Cisco",
     date: "Dec 2024",
     skills: ["Cybersecurity", "Threat Analysis", "Network Defense", "Privacy"],
-    image: "/certificates/cisco-cyber.jpg",
-    link: "#"
-  },
-  {
-    id: "isc2-candidate",
-    title: "ISC2 Candidate",
-    issuer: "ISC²",
-    date: "Nov 2024 – Nov 2025",
-    skills: ["Cybersecurity", "Risk Management", "Security"],
-    image: "/certificates/isc2-candidate.jpg",
-    link: "#",
-    note: "Candidate in good standing"
+    image: "/certificates/introduction-to-cybersecurity.png",
+    link: "https://www.credly.com/badges/542ea117-bf0a-4b8a-8b07-9630b9564f11/linked_in_profile"
   },
   {
     id: "responsive-web-design",
@@ -52,25 +42,16 @@ export const certifications = [
     issuer: "freeCodeCamp",
     date: "Dec 2023",
     skills: ["HTML5", "CSS Grid", "Responsive Design", "Git/GitHub"],
-    image: "/certificates/freecodecamp-responsive.jpg",
-    link: "#"
+    image: "/certificates/freecodecamp-responsive.png",
+    link: "https://www.freecodecamp.org/certification/masalagift_ratshili/responsive-web-design"
   },
   {
     id: "react-cert-mlab",
     title: "React Development Certificate",
     issuer: "mLab Southern Africa",
-    date: "2025",
+    date: "Mar 2026",
     skills: ["React", "Frontend Development", "TypeScript"],
-    image: "/certificates/react-mlab.jpg",
-    link: "#"
-  },
-  {
-    id: "ibm-fullstack",
-    title: "IBM Full-Stack JavaScript Developer",
-    issuer: "IBM",
-    date: "In Progress",
-    skills: ["React", "Node.js", "JavaScript", "Cloud", "Full-Stack"],
-    image: "/certificates/ibm-fullstack.jpg",
-    link: "#"
+    image: "/certificates/mLab.png",
+    link: "https://codetribe.mlab.co.za/verify-student/94f35d85-b25d-4364-83c4-6fd8157fb286"
   }
 ];

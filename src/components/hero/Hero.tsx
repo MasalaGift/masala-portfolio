@@ -24,8 +24,10 @@ export default function Hero() {
         }}
       >
         I build modern web, mobile, and backend systems using React, TypeScript,
-        React Native, Node.js, and Spring Boot. Experienced in <strong>Agile teams</strong>,
-        <strong> Vercel/Render</strong>, <strong>Figma</strong>, and <strong>Trello</strong>.
+        React Native, and Node.js (PERN stack). I also develop REST APIs with Spring Boot 
+        as personal projects to deepen my Java backend skills. 
+        Experienced in <strong>Agile teams</strong>, <strong>Vercel/Render</strong>, 
+        <strong> Figma</strong>, and <strong>Trello</strong>.
         Passionate about scalable software and clean user experiences.
       </p>
 
@@ -39,7 +41,7 @@ export default function Hero() {
         }}
       >
         <button onClick={scrollToProjects} className="btn">View Projects</button>
-        <a href="/resume/Masala_Ratshili_CV.pdf" className="btn" download>Download CV</a>
+        <a href="/resume/masala-ratshili-cv.pdf" className="btn" download>Download CV</a>
         <a href="https://github.com/MasalaGift" className="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/giftratshili" className="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
