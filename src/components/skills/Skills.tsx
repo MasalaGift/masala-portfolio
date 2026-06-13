@@ -5,7 +5,7 @@ const skills = {
   "Backend": ["Node.js", "Express", "Spring Boot", "Java", "Python"],
   "Mobile": ["React Native"],
   "Databases": ["PostgreSQL", "MySQL"],
-  "Cloud & DevOps": ["AWS (EC2, Deployment)", "Git", "GitHub", "Bitbucket", "Postman"],
+  "Deployment & Tools": ["Vercel", "Render", "GitHub Pages", "Git", "GitHub", "Bitbucket", "Postman"],
   "UI/UX & Agile Tools": ["Figma", "Trello", "Jira", "Confluence"],
   "Core Concepts": ["REST APIs", "JWT Authentication", "SDLC", "Agile Methodologies"]
 };

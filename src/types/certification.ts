@@ -6,4 +6,5 @@ export interface Certification {
   skills: string[];
   image: string;
   link?: string;
+  credentialId?: string;
 }

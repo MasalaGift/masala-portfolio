@@ -15,7 +15,7 @@ export default function About() {
           implemented UI from <strong>Figma</strong> designs, and contributed to full SDLC – from sprint planning to deployment.
         </p>
         <p>
-          I've deployed applications on <strong>AWS</strong>, built REST APIs, and I'm continuously learning
+          I've deployed applications on <strong>Vercel, Render, and GitHub Pages</strong>, built REST APIs, and I'm continuously learning
           (IBM certifications, Python basics, cloud fundamentals). I'm passionate about clean code, responsive design,
           and delivering real value.
         </p>

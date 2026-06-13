@@ -12,13 +12,13 @@ export default function Experience() {
           <li>Built RESTful APIs and integrated PostgreSQL/MySQL databases</li>
           <li>Implemented UI components from <strong>Figma</strong> designs, ensuring pixel-perfect responsive layouts</li>
           <li>Managed tasks and sprints using <strong>Trello</strong>, participated in daily standups and retrospectives</li>
-          <li>Deployed applications on <strong>AWS</strong> (EC2, hosting)</li>
+          <li>Deployed applications on <strong>Vercel, Render, and GitHub Pages</strong></li>
           <li>Used Git/GitHub for version control and collaborated via code reviews</li>
           <li>Assisted in JWT authentication, testing, debugging, and performance optimization</li>
           <li>Exposed to <strong>Python</strong> basics through IBM certification and scripting tasks</li>
         </ul>
         <p className="tech-stack">
-          <strong>Environment:</strong> React, TypeScript, Node.js, Spring Boot, PostgreSQL, AWS, Figma, Trello, Git
+          <strong>Environment:</strong> React, TypeScript, Node.js, Spring Boot, PostgreSQL, Vercel, Render, Figma, Trello, Git
         </p>
       </div>
     </section>

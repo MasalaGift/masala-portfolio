@@ -1,6 +1,13 @@
 import "../../styles/global.css";
 
 export default function Hero() {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects-section");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="container" style={{ padding: "60px 0", textAlign: "center" }}>
       <h1 style={{ fontSize: "42px" }}>Masala Gift Ratshili</h1>
@@ -18,7 +25,7 @@ export default function Hero() {
       >
         I build modern web, mobile, and backend systems using React, TypeScript,
         React Native, Node.js, and Spring Boot. Experienced in <strong>Agile teams</strong>,
-        <strong> AWS</strong>, <strong>Figma</strong>, and <strong>Trello</strong>.
+        <strong> Vercel/Render</strong>, <strong>Figma</strong>, and <strong>Trello</strong>.
         Passionate about scalable software and clean user experiences.
       </p>
 
@@ -31,7 +38,7 @@ export default function Hero() {
           flexWrap: "wrap",
         }}
       >
-        <a href="#projects" className="btn">View Projects</a>
+        <button onClick={scrollToProjects} className="btn">View Projects</button>
         <a href="/resume/Masala_Ratshili_CV.pdf" className="btn" download>Download CV</a>
         <a href="https://github.com/MasalaGift" className="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/giftratshili" className="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>

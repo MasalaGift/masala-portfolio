@@ -11,7 +11,9 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
-      <ProjectCarousel />
+      <div id="projects-section">
+        <ProjectCarousel />
+      </div>
       <Skills />
       <CertificationGrid />
     </>
