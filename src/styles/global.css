@@ -263,6 +263,39 @@ body {
   padding: 4rem 0;
 }
 
+/* Swiper custom styles for dark theme */
+.swiper-pagination-bullet {
+  background: var(--muted);
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary);
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary);
+  background: rgba(15, 23, 42, 0.7);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: var(--primary);
+  color: #0f172a;
+}
+
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
   .grid-3 {
@@ -303,3 +336,4 @@ body {
     height: 150px;
   }
 }
+
