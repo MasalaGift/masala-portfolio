@@ -8,14 +8,24 @@ import CertificationGrid from "../components/CertificationGrid";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <Experience />
+      <div id="hero-section">
+        <Hero />
+      </div>
+      <div id="about-section">
+        <About />
+      </div>
+      <div id="experience-section">
+        <Experience />
+      </div>
       <div id="projects-section">
         <ProjectCarousel />
       </div>
-      <Skills />
-      <CertificationGrid />
+      <div id="skills-section">
+        <Skills />
+      </div>
+      <div id="certifications-section">
+        <CertificationGrid />
+      </div>
     </>
   );
 }
