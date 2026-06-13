@@ -34,7 +34,7 @@ export const projects: Project[] = [
     github: "#private",
     screenshots: ["/screenshots/shopping/1.png", "/screenshots/shopping/2.png", "/screenshots/shopping/3.png"],
     category: "mlab",
-    featured: false,
+    featured: true,
     role: "Frontend & API Developer",
     contributions: [
       "Managed feature tickets on Trello",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     github: "#private",
     screenshots: ["/screenshots/weather/1.png", "/screenshots/weather/2.png"],
     category: "mlab",
-    featured: false,
+    featured: true,
     role: "Frontend Developer",
     contributions: [
       "Translated Figma designs into responsive components",
