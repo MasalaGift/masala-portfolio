@@ -5,8 +5,8 @@ const skills = {
   "Backend": ["Node.js", "Express", "Spring Boot", "Java", "Python"],
   "Mobile": ["React Native"],
   "Databases": ["PostgreSQL", "MySQL"],
-  "Deployment & Tools": ["Vercel", "Render", "GitHub Pages", "Git", "GitHub", "Bitbucket", "Postman"],
-  "UI/UX & Agile Tools": ["Figma", "Trello", "Jira", "Confluence"],
+  "Deployment & Tools": ["Vercel", "Render", "GitHub Pages", "Git", "GitHub", "Postman"],
+  "UI/UX & Agile Tools": ["Figma", "Trello", "Jira"],
   "Core Concepts": ["REST APIs", "JWT Authentication", "SDLC", "Agile Methodologies"]
 };
 

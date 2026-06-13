@@ -1,5 +1,5 @@
 import type { Project } from "../types/project";
-import "../styles/global.css"; // ensure grid styles are available
+import "../styles/global.css";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -9,12 +9,27 @@ interface ProjectModalProps {
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   if (!project) return null;
 
+  const handleGitHubClick = () => {
+    if (project.github === "#private") {
+      alert("This repository is private. If you'd like to collaborate or see the code, please contact me directly.");
+    } else if (project.github) {
+      window.open(project.github, "_blank", "noopener noreferrer");
+    }
+  };
+
+  const handleDemoClick = () => {
+    if (project.demo === "#") {
+      alert("Live demo link coming soon.");
+    } else if (project.demo) {
+      window.open(project.demo, "_blank", "noopener noreferrer");
+    }
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <h2>{project.title}</h2>
 
-        {/* Role badge (if present) */}
         {project.role && (
           <span
             style={{
@@ -36,7 +51,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           {project.longDescription}
         </p>
 
-        {/* Contributions (new) */}
         {project.contributions && project.contributions.length > 0 && (
           <div style={{ marginTop: "1.5rem" }}>
             <h3 style={{ color: "#38bdf8", fontSize: "1.25rem", marginBottom: "0.5rem" }}>
@@ -52,7 +66,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
         )}
 
-        {/* SCREENSHOTS GRID */}
         {project.screenshots && project.screenshots.length > 0 && (
           <>
             <h3 style={{ color: "#38bdf8", fontSize: "1.25rem", marginTop: "1.5rem", marginBottom: "0.5rem" }}>
@@ -71,7 +84,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           </>
         )}
 
-        {/* TECH STACK */}
         <div style={{ marginTop: "1.5rem" }}>
           <h3 style={{ color: "#38bdf8", fontSize: "1.25rem", marginBottom: "0.5rem" }}>
             Technologies
@@ -85,18 +97,17 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           </div>
         </div>
 
-        {/* LINKS */}
         {(project.demo || project.github) && (
           <div style={{ marginTop: "1.5rem", display: "flex", gap: 10, flexWrap: "wrap" }}>
             {project.demo && (
-              <a className="btn" href={project.demo} target="_blank" rel="noopener noreferrer">
+              <button onClick={handleDemoClick} className="btn">
                 Live Demo
-              </a>
+              </button>
             )}
             {project.github && (
-              <a className="btn" href={project.github} target="_blank" rel="noopener noreferrer">
+              <button onClick={handleGitHubClick} className="btn">
                 GitHub
-              </a>
+              </button>
             )}
           </div>
         )}

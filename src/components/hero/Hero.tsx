@@ -24,8 +24,10 @@ export default function Hero() {
         }}
       >
         I build modern web, mobile, and backend systems using React, TypeScript,
-        React Native, Node.js, and Spring Boot. Experienced in <strong>Agile teams</strong>,
-        <strong> Vercel/Render</strong>, <strong>Figma</strong>, and <strong>Trello</strong>.
+        React Native, and Node.js (PERN stack). I also develop REST APIs with Spring Boot 
+        as personal projects to deepen my Java backend skills. 
+        Experienced in <strong>Agile teams</strong>, <strong>Vercel/Render</strong>, 
+        <strong> Figma</strong>, and <strong>Trello</strong>.
         Passionate about scalable software and clean user experiences.
       </p>
 

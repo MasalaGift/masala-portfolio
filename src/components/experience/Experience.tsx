@@ -8,8 +8,8 @@ export default function Experience() {
         <h3>Software Development Intern</h3>
         <p className="company">mLab Southern Africa | April 2025 – March 2026</p>
         <ul>
-          <li>Developed full-stack applications with React, TypeScript, Node.js, Spring Boot</li>
-          <li>Built RESTful APIs and integrated PostgreSQL/MySQL databases</li>
+          <li>Developed full-stack applications with the <strong>PERN stack</strong> (PostgreSQL, Express, React, Node.js) and TypeScript</li>
+          <li>Built RESTful APIs with Express.js and integrated PostgreSQL databases</li>
           <li>Implemented UI components from <strong>Figma</strong> designs, ensuring pixel-perfect responsive layouts</li>
           <li>Managed tasks and sprints using <strong>Trello</strong>, participated in daily standups and retrospectives</li>
           <li>Deployed applications on <strong>Vercel, Render, and GitHub Pages</strong></li>
@@ -18,7 +18,7 @@ export default function Experience() {
           <li>Exposed to <strong>Python</strong> basics through IBM certification and scripting tasks</li>
         </ul>
         <p className="tech-stack">
-          <strong>Environment:</strong> React, TypeScript, Node.js, Spring Boot, PostgreSQL, Vercel, Render, Figma, Trello, Git
+          <strong>Environment:</strong> PostgreSQL, Express, React, Node.js, TypeScript, Vercel, Render, Figma, Trello, Git
         </p>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 import ProjectModal from "../components/ProjectModal";
@@ -8,6 +9,7 @@ import "../styles/global.css";
 type Category = "all" | "mlab" | "personal";
 
 export default function ProjectsPage() {
+  const navigate = useNavigate();
   const [category, setCategory] = useState<Category>("all");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
@@ -21,6 +23,15 @@ export default function ProjectsPage() {
 
   return (
     <div className="container section">
+      {/* Back button */}
+      <button
+        onClick={() => navigate("/")}
+        className="btn"
+        style={{ marginBottom: "2rem", background: "#334155", color: "var(--text)" }}
+      >
+        ← Back to Home
+      </button>
+
       <h1 className="section-title">All Projects</h1>
       
       {/* Category tabs */}

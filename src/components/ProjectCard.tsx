@@ -8,8 +8,25 @@ export default function ProjectCard({
   project: Project;
   onClick: () => void;
 }) {
-  // Fallback image if screenshot array is empty or first entry missing
   const imageSrc = project.screenshots?.[0] || "/images/placeholder.png";
+
+  const handleGitHubClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (project.github === "#private") {
+      alert("This repository is private. If you'd like to collaborate or see the code, please contact me directly.");
+    } else if (project.github) {
+      window.open(project.github, "_blank", "noopener noreferrer");
+    }
+  };
+
+  const handleDemoClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (project.demo === "#") {
+      alert("Live demo link coming soon.");
+    } else if (project.demo) {
+      window.open(project.demo, "_blank", "noopener noreferrer");
+    }
+  };
 
   return (
     <div className="project-card">
@@ -18,35 +35,29 @@ export default function ProjectCard({
       <div className="project-card-content">
         <h3>{project.title}</h3>
 
-        {/* Role badge (if available) */}
         {project.role && (
           <span className="project-role-badge">{project.role}</span>
         )}
 
         <p className="project-type">{project.type}</p>
+        <p style={{ fontSize: "13px", marginTop: 5 }}>{project.description}</p>
 
-        <p style={{ fontSize: "13px", marginTop: 5 }}>
-          {project.description}
-        </p>
-
-        {/* TECH STACK */}
         <div className="tech-tags">
           {project.tech.map((t) => (
             <span key={t}>{t}</span>
           ))}
         </div>
 
-        {/* LINKS */}
         <div style={{ marginTop: 10, display: "flex", gap: "10px" }}>
           {project.demo && (
-            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="btn">
+            <button onClick={handleDemoClick} className="btn">
               Live Demo
-            </a>
+            </button>
           )}
           {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">
+            <button onClick={handleGitHubClick} className="btn">
               GitHub
-            </a>
+            </button>
           )}
         </div>
 
