@@ -41,7 +41,7 @@ export default function Hero() {
         }}
       >
         <button onClick={scrollToProjects} className="btn">View Projects</button>
-        <a href="/resume/masala-ratshili-cv.pdf" className="btn" download>Download CV</a>
+        //<a href="/resume/masala-ratshili-cv.pdf" className="btn" download>Download CV</a>
         <a href="https://github.com/MasalaGift" className="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/giftratshili" className="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
